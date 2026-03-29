@@ -2,9 +2,10 @@
 
 
 #1) 
+```python
 a=10                                   a=10.555                                a="shivu" 
 print(a)                               print(a)                                print(a)
-print(type(a)) --><class 'int'>        print(type(a))--><class 'float'>        print(type(a))--><class 'str'>
+print(type(a)) --><class 'int'>        print(type(a))--><class 'float'>        print(type(a))--><class 'str'> ```
 
 
 #2)
@@ -20,6 +21,8 @@ a,b=b,a      ----> swapping
 
 #5)
 x=y=z = 100    ----> assaing same value
+
+
 
 
 
