@@ -203,13 +203,16 @@ Syntax :  [on_true] if [expression] else [on_false]
 """
 #1 min of two num
 a, b = 10, 20
-min = a if a < b else b​
+min = a if a < b else b
 print(min)
 
 #2 special two digit (sum + product = given number or ends with 9 )
-
-
-
+x=59
+d1=x//10
+d2=x%10
+sum=d1+d2+d1*d2
+res="special" if sum == x else "not special"
+print(res)
 
 
 
