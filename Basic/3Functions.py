@@ -63,3 +63,5 @@ check_prime(39)
 #2) def function to check number is a palindrome or not
 #3) def function to print max among 3 integers
 #4) def functions to check date is valid are not , take three parameters dd-mm-yy
+#5) check 3 integer are equal or not
+#6) def function take 4 subj marks of students print is pass or fail , if pass print his grade 
