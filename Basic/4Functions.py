@@ -3,19 +3,19 @@
 
 #Advantage
 """
-#1)Code reuseabilty - write once use many time
-#2)same task deff values
+#1)Code reusability - write once use many time
+#2)same task different values
 #3)easy to modify
 #4)Modularity - code becomes shorter
-#5)Readabilty - easy to understand
-#6)Maintainabilty"""
+#5)Readability - easy to understand
+#6)Maintainability"""
 
 
 #types of functions
 """
 1)Builtin 
 2)user defined
-3)Ananymous (lambda)
+3)Anonymous (lambda)
 """
 
 
@@ -23,7 +23,7 @@
 #define function using def keyword . A function might take input in the form of parameters.
 
 """
-def function_name ( parameters ):  --------> function declaretion (called functions)
+def function_name ( parameters ):  --------> function declaration (called functions)
     #statements             ------> body
     return expression 
 
@@ -33,7 +33,7 @@ greet() ---------> calling statements
 
 #arguments or type of arguments
 """
-1)posistionel
+1)positional
 2)keyword
 3)default
 4)variable length arg
@@ -47,7 +47,7 @@ greet()"""
 
 
 #1) Prime or not in function
-"""def check_prime(num):   #---->positionel arguments
+"""def check_prime(num):   #---->positional arguments
     if num<=1:
         print(num,"not a prime")
         return
@@ -62,7 +62,7 @@ check_prime(39)"""
 
 #2) def function to check number is a palindrome or not
 
-#approch 1:
+#approach 1:
 """def palindrome(num):
     rev=""
     for i in str(num):
@@ -72,7 +72,7 @@ check_prime(39)"""
 
 palindrome(121)"""
 
-#approch 2:
+#approach 2:
 """def palindrome(num):
     org=num
     rev=0
@@ -85,7 +85,7 @@ palindrome(121)"""
 
         
 #3) def function to print max among 3 integers
-#approch 1:
+#approach 1:
 """def max1(a,b,c):
     if a>b:
         if a>c:
@@ -100,7 +100,7 @@ palindrome(121)"""
 max1(5000,5465,68549)"""
 
 
-#approch 2:
+#approach 2:
 """def max2(a,b,c):
     return a if a>b and a>c  else b if b>c else c
 
@@ -118,7 +118,7 @@ print(max2(50,100,300))
     elif mm==2 and dd>29:         
         print('invalid')
     elif mm==2 and not(yy%400==0 or yy%4==0 and yy%100!=0) and dd>28:
-        print('inavlid')
+        print('invalid')
     else:
         print('valid') 
 check_date(19,2,2023)"""
@@ -145,3 +145,4 @@ equal(5,6,6)"""
 
 
 marks(50,100,80,60)"""
+
