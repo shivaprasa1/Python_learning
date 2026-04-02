@@ -152,7 +152,7 @@ marks(50,100,80,60)
 """
 #or
 
-def printresult(p,c,m,b):
+"""def printresult(p,c,m,b):
     if p<35 or c<35 or m<35 or b<35:
         print("Fail")
     else:
@@ -164,35 +164,36 @@ def printresult(p,c,m,b):
         elif per>=50:
             print("second")
         else:
-            print("just pass")
+            print("just pass")"""
             
             
-            
-            
-        
+
         
 # def function to written first digit of number
 
-"""def digit(num):
+"""
+def digit(num):
+    y=num
     if num <0:
         num=num*-1
     while num>=10 or num<-9:
         num//=10
-    return num 
-print(digit(-95))
+    return num*-1 if y < 0 else num 
+print(digit(-156))
 
 """
 
+
 #or
+
 """import math
 def digit(x):
-    if x<0:                                                    #  two - 10 , three - 100  
+    if x<0:                       #  two - 10 , three - 100  , fourth - 1000  --->10 power of this  (if we do log10 to any number it give n-1 digit) 
         x=x*-1
     ct = int(math.log10(x))
     return x//10**ct
-print(digit(123))
+print(digit(5))
 """
-
 
 
 # def function to return how many prime digit present in the number
@@ -211,7 +212,7 @@ print(digit(123))
 print(prime_count(2357))"""
 
 #or 
-
+"""
 def count_prime(n):
     count=0
     while n!=0:
@@ -220,7 +221,7 @@ def count_prime(n):
             count+=1
         n=n//10
         return count
-
+"""
 
 
 
@@ -228,7 +229,7 @@ def count_prime(n):
 #Deault arg
 #assaning a value to any arguments or para at the time of declartion or fn def
 # default must write after all the positinol
-""""def fun(a=0):
+"""def fun(a=0):
     print('value is ',a)
 fun(10)
 fun()
@@ -252,7 +253,7 @@ def bill(price,tax=0.18):
     ttax=price*tax
     print('tax applied',ttax)
     total=price+ttax  
-    print('total bill',total)""""
+    print('total bill',total)"""
     
     
     

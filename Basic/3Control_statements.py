@@ -769,17 +769,17 @@ for i in range(1,x//2+1):            #  O(n/2)   ---> any divisible within that 
 
 # Q2) check the number is perfect number or not (sum its  diviser is equal to that number ) 
 
-"""# num=int(input("enter a num"))
-for num in range(100):
+"""num=int(input("enter a num"))
+for num in range(10):
     sum=0
     for i in range(1,num//2+1):      # reduce divisable  
         if num%i==0:
             sum+=i
-    # print(sum==num)
+    #print(sum==num)
 
-    if num==sum:
-        print(num,'is a perfect number')""" 
-    
+    if num==sum: 
+        print(num,'is a perfect number')
+    """
 
 
 # Q3) Count how many divises for n
@@ -804,17 +804,17 @@ print(count)
 
 
 #Q4) check user enter integer is prime or not 
-"""
-n=int(input("enter a num"))
+"""n=int(input("enter a num"))
 count=1
 for i in range(1,n//2+1):
     if n%i==0:
         count+=1
- if count==2:
+        
+if count==2:
     print((x,'is prime num'))
 else:
-    print("not")"""
-
+    print("not")
+"""
 
 
 # Q5)  print all even number within n
@@ -822,8 +822,8 @@ else:
 """n=int(input("enter the number"))
 
 for i in range(2,n+1,2):
-    print(i,end=" ")"""
-
+    print(i,end=" ") 
+"""
 
 #asss
 #Q1) print odd between 1 to n and calculate sum of even number and odd number within n
@@ -847,10 +847,20 @@ print(odd,even)"""
 
 #q3 print multiplication table for user enter number
 
-
+"""n=10
+while n>0:
+    num=int(input("enter num:"))
+    for i in range(1,11):
+        print(num , "*" , i ,"=",num*i)
+    n-=1
+"""
 #Q4)print all the even numbers from n to 1
+"""n=int(input("enter num:"))
+for i in range(n,0,-1):                # start from 2 if it is even
+    if i%2==0:
+        print(i)
 
-
+"""
 
 
 #-----------------------------------
@@ -946,9 +956,10 @@ else:
 #exit(function) - terminate the program
 
 """import sys
-
+n=1
 if n<=1:
     sys.exit()
+print("hi i am shivu")
 """
 
 
