@@ -139,7 +139,8 @@ equal(5,6,6)"""
         print("invalid marks")
     if s1 > 35 and s2>35 and s3>35 and s4>35:
         print("All subject pass")
-        print("grade is " ,(s1+s2+s3+s4)*100 /100 ,"out of 100 ")       
+        Percentage = (s1+s2+s3+s4)*100 /100  
+        if       
     else:
         print("fail")
 

@@ -30,6 +30,7 @@
 
 #Q1) read one value from the user print that integer in positive format
 
+# sourcery skip: avoid-builtin-shadow
 """x=int(input("enter num : "))
 if x<0:
     x=x*-1    #convert negative to positive 
@@ -439,7 +440,8 @@ else:
 #problem statements
 
 #1)
-"""Given two numbers a and b. You need to perform basic mathematical operations on them. You will be provided an integer named as operator
+"""
+Given two numbers a and b. You need to perform basic mathematical operations on them. You will be provided an integer named as operator
 If the operator equals to 1 add a and b, then print the result.
 If the operator equals to 2 subtract b from a, then print the result.
 If the operator equals to 3 multiply a and b, then print the result.
@@ -451,10 +453,12 @@ Output: 2
 Explanation: 122
 Input: a = 2 b = 2 operator = 2
 Output: 0
-Explanation: 220"""
+Explanation: 220
+"""
 
 
-"""a=int(input("enter "))
+"""
+a=int(input("enter "))
 b=int(input("enter "))
 operator = int(input("1.additon \n 2.sub \n 3.multi \n"))
 
@@ -465,13 +469,16 @@ elif operator ==2:
 elif operator ==3:
     print(a*b)
 else:
-    print("Invalid........./")"""
+    print("Invalid........./")
+
+"""
 
 
 #2)
 # read the date from the user dd-mm-yy formate check date is valid or invalid
 
-"""dd=int(input())
+"""
+dd=int(input())
 mm=int(input())
 yy=int(input())
 
@@ -500,8 +507,7 @@ else:
 
 
 
-
-#Q1) 1 to 10 
+#Q1) 1 to 10 even number 
 
 # n=int(input('enter the value of n'))
 """
@@ -628,7 +634,7 @@ while i<=n:
 
 #4) calculate the product of digits (i/p: 234 o/p:24 , ---> 2*3*4)
 """n=int(input("enter a num: "))
-product=12
+product=1
 while n>0:
     product*=n%10
     n//=10
@@ -637,14 +643,22 @@ print(product)"""
 
 #5) calculate the average of digits (i/p:234 o/p:3)
 
+"""
+n=int(input( "enter num"))
+count=0
+sum=0
+while n>0:
+    sum+=n%10
+    count+=1
+    n//=10
+print(sum//count)
+
+"""
+
+    
 
 
-
-
-
-
-
-#date 28/03/2026
+#date - 28/03/2026
 
 #1) reverse number
 """rev=0
@@ -675,28 +689,21 @@ else:
 
 #or
 
-# start,end=100,200
-
-# while start<=end:
-#     sum,temp=0,start
-#     count=len(str(temp))     # count the digit for doing power of it
-#     while >0:
-#         digit=x%10
-#         sum+=digit**count
-#         x//=10
-#     if sum==temp:
-#         print(sum)
-#     start=start+1
-    
-
-
-
-
-
+"""start,end=153,10000
+while start<=end:
+    sum,temp=0,start
+    count=len(str(temp))     # count the digit for doing power of it
+    while temp>0:
+        digit=temp%10
+        sum+=digit**count
+        temp//=10
+    if start==sum:
+        print(sum)
+    start+=1 """
 
 
 #3) Dsierium - sum of power of each digit by there position that equal to number    
-#           135--> 1^1+3^2+5^3
+# 135--> 1^1+3^2+5^3
 
 """num=int(input("enter the number :"))
 sum,temp=0,num
@@ -762,21 +769,21 @@ for i in range(1,x//2+1):            #  O(n/2)   ---> any divisible within that 
 
 # Q2) check the number is perfect number or not (sum its  diviser is equal to that number ) 
 
-"""num=int(input("enter a num"))
-sum=0
-for i in range(1,num//2+1):      # reduce divisable  
-    if num%i==0:
-        sum+=i
-print(sum==num)
+"""# num=int(input("enter a num"))
+for num in range(100):
+    sum=0
+    for i in range(1,num//2+1):      # reduce divisable  
+        if num%i==0:
+            sum+=i
+    # print(sum==num)
 
-if num==sum:
-    print(num,'is a perfect number')
-else:
-    print(num,'is not perfect number')"""
+    if num==sum:
+        print(num,'is a perfect number')""" 
+    
 
 
 # Q3) Count how many divises for n
-
+ 
 #approch - 01
 """n=int(input("enter a num"))
 count=1                           # 1 must be inculed
