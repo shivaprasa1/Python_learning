@@ -8,7 +8,9 @@
 #3)easy to modify
 #4)Modularity - code becomes shorter
 #5)Readability - easy to understand
-#6)Maintainability"""
+#6)Maintainability
+
+ """
 
 
 #types of functions
@@ -108,7 +110,6 @@ print(max2(50,100,300))
 """
 
 
-
 #4) def functions to check date is valid are not , take three parameters dd-mm-yy
 """def check_date(dd,mm,yy):
     if dd<=0 and dd>31 and mm<=0 and mm>12 and y<0:
@@ -140,10 +141,124 @@ equal(5,6,6)"""
     if s1 > 35 and s2>35 and s3>35 and s4>35:
         print("All subject pass")
         Percentage = (s1+s2+s3+s4)*100 /100  
-        if       
+        if percentage > 80:
+            print('grade A ")
+        elif percentage < 80 and percentage > 50:
+            print("grade B")      
     else:
         print("fail")
 
+marks(50,100,80,60)
+"""
+#or
 
-marks(50,100,80,60)"""
+def printresult(p,c,m,b):
+    if p<35 or c<35 or m<35 or b<35:
+        print("Fail")
+    else:
+        per=(p+c+m+b)/4
+        if per>=85:
+            print("distinction")
+        elif per>=60:
+            print("First class")
+        elif per>=50:
+            print("second")
+        else:
+            print("just pass")
+            
+            
+            
+            
+        
+        
+# def function to written first digit of number
+
+"""def digit(num):
+    if num <0:
+        num=num*-1
+    while num>=10 or num<-9:
+        num//=10
+    return num 
+print(digit(-95))
+
+"""
+
+#or
+"""import math
+def digit(x):
+    if x<0:                                                    #  two - 10 , three - 100  
+        x=x*-1
+    ct = int(math.log10(x))
+    return x//10**ct
+print(digit(123))
+"""
+
+
+
+# def function to return how many prime digit present in the number
+
+
+"""def prime_count(num):
+    count=0
+    while num>0:
+        digit=num%10
+        for i in range(2,int(digit**0.5)+1):
+            if num%i!=0:
+                count+=1
+        num//=10
+    return count
+
+print(prime_count(2357))"""
+
+#or 
+
+def count_prime(n):
+    count=0
+    while n!=0:
+        d=n%10
+        if d==2 or d==3 or d==5 or d==7:     # if d in [2,3,5,7]
+            count+=1
+        n=n//10
+        return count
+
+
+
+
+
+#Deault arg
+#assaning a value to any arguments or para at the time of declartion or fn def
+# default must write after all the positinol
+""""def fun(a=0):
+    print('value is ',a)
+fun(10)
+fun()
+fun("abc")
+
+
+def sum(a=0,b=0):
+    print('a value is : ' ,a)
+    print('b value is : ' ,b)
+    print('value is : ' ,a+b)
+
+def prod(a=1,b=1):
+    print('a value is : ' ,a)
+    print('b value is : ' ,b)
+    print('value is : ' ,a*b) 
+    
+
+
+def bill(price,tax=0.18):
+    print('price is ',price)
+    ttax=price*tax
+    print('tax applied',ttax)
+    total=price+ttax  
+    print('total bill',total)""""
+    
+    
+    
+# def function num is a desierm num 
+#def function to return avg of digit
+#def function to return true if the num is the strong number otherwise return false
+#def function to return reverse of the num
+#def function to return true if the num is happy number otherwise return false
 
