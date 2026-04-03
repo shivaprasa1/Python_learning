@@ -48,18 +48,21 @@ greet() ---------> calling statements
 greet()"""
 
 
+
+#positional
+
 #1) Prime or not in function
 """def check_prime(num):   #---->positional arguments
     if num<=1:
         print(num,"not a prime")
         return
-    for i in range(2,int(num**2)+1):
+    for i in range(2,int(num**0.5)+1):
         if num%i==0:
             print(num,"not prime")
             return
     print(num,'prime number')
 
-check_prime(39)"""
+check_prime(3)"""
 
 
 #2) def function to check number is a palindrome or not
@@ -224,7 +227,7 @@ def count_prime(n):
 """
 
 
-
+#-------------------------------------------------------------------------------------------------
 
 #Deault arg
 #assaning a value to any arguments or para at the time of declartion or fn def
@@ -258,8 +261,93 @@ def bill(price,tax=0.18):
     
     
 # def function num is a desierm num 
+"""def desierm(num):
+    temp=num
+    digit=0
+    count=len(str(num))
+    while num>0:
+        digit+=(num%10)**count
+        count=count-1
+        num//=10
+    return digit==temp 
+print(desierm(135))
+"""
+
 #def function to return avg of digit
+"""def avg(num):
+    summ=0
+    count=len(str(num))
+    while num >0:
+        summ+=(num%10)/count
+        num//=10
+    return summ
+
+print(avg(1234))"""
+        
 #def function to return true if the num is the strong number otherwise return false
+"""def strong(num):
+    temp=num
+    digit=0
+    strong=0
+    while num >0:
+        digit=num%10
+        fact=1
+        for i in range(1,digit+1): 
+            fact*=i
+        strong+=fact
+        num//=10
+    return strong==temp
+
+print(strong(145))"""
+            
+        
 #def function to return reverse of the num
-#def function to return true if the num is happy number otherwise return false
+"""def rev(num):
+    rev=0
+    while num>0:
+        rev=rev*10+(num%10)
+        num//=10
+    return rev
+print(rev(123456))
+"""
+
+#def function to return true if the num is happy number otherwise return false ----> sum of square of each digit until it become one or 7
+"""
+num=12
+def happy(num):  
+    while num>9:  
+        digit=0
+        for i in str(num):
+            digit+=int(i)**2
+        num=digit
+    return num==1 or num==7
+
+print(happy(19))"""
+
+
+
+#------------------------------------------------------------------------------------------------------
+
+
+#keywaord arguments
+# spcifying the parameter name in calling statements         
+# Order is not require
+
+
+#
+"""
+def area_rect(length,breadth):
+    print('Area is ', length*breadth)
+    print('perimeter is ', 2*(length + breadth))
+area_rect(breadth=8,length=10)   #--------------> keyword arguments
+
+"""
+
+
+# Q1) def function to write GCD of any two number
+
+def gcd(n1,n2):
+    print("gcd is ", n1*n2/2) 
+        
+    
 
