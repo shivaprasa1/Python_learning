@@ -332,9 +332,10 @@ print(happy(19))"""
 #keywaord arguments
 # spcifying the parameter name in calling statements         
 # Order is not require
+# always first is positionel arguments then keywords or default at last
 
 
-#
+#Example
 """
 def area_rect(length,breadth):
     print('Area is ', length*breadth)
@@ -345,9 +346,32 @@ area_rect(breadth=8,length=10)   #--------------> keyword arguments
 
 
 # Q1) def function to write GCD of any two number
-
+"""
 def gcd(n1,n2):
-    print("gcd is ", n1*n2/2) 
+    print("gcd is ", n1*n2/2) """
         
-    
+
+
+
+# 
+"""def info(name,age):
+    print(name,age)
+info(name="prasad","hb") #error first always positional
+"""
+
+
+#Both default , positionel , keyword
+"""
+def profile(age=None,name=None,mob=None):
+    print("name",name)
+    print("age:",age)
+    print("mob:",mob)
+profile()
+profile(25,name="shivu",mob=12346789)
+"""
+
+
+
+
+
 
