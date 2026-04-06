@@ -8,7 +8,7 @@
 #3)easy to modify
 #4)Modularity - code becomes shorter
 #5)Readability - easy to understand
-#6)Maintainability
+#6)Maintainability 
 
  """
 
@@ -159,7 +159,7 @@ marks(50,100,80,60)
     if p<35 or c<35 or m<35 or b<35:
         print("Fail")
     else:
-        per=(p+c+m+b)/4
+        per=(p+c+m+b)/4             #------------> avg or percentage same
         if per>=85:
             print("distinction")
         elif per>=60:
@@ -179,17 +179,19 @@ def digit(num):
     y=num
     if num <0:
         num=num*-1
-    while num>=10 or num<-9:
+    while num>=10 or num<-9:       #  -10 < -9 < -8 < -7 < -6  < -5 < -4 < -3 < -2 < -1 <<<<< 0 <<<<<< 1 < 2 < 3 < 
         num//=10
     return num*-1 if y < 0 else num 
 print(digit(-156))
 
 """
+# print(max(-8,-9))   # max is -8 
 
 
 #or
 
-"""import math
+"""
+import math
 def digit(x):
     if x<0:                       #  two - 10 , three - 100  , fourth - 1000  --->10 power of this  (if we do log10 to any number it give n-1 digit) 
         x=x*-1
@@ -199,10 +201,13 @@ print(digit(5))
 """
 
 
+
+
 # def function to return how many prime digit present in the number
 
 
-"""def prime_count(num):
+"""
+def prime_count(num):
     count=0
     while num>0:
         digit=num%10
@@ -229,7 +234,7 @@ def count_prime(n):
 
 #-------------------------------------------------------------------------------------------------
 
-#Deault arg
+#Default arg
 #assaning a value to any arguments or para at the time of declartion or fn def
 # default must write after all the positinol
 """def fun(a=0):
@@ -346,12 +351,28 @@ area_rect(breadth=8,length=10)   #--------------> keyword arguments
 
 
 # Q1) def function to write GCD of any two number
-"""
-def gcd(n1,n2):
-    print("gcd is ", n1*n2/2) """
-        
 
 
+#approch - 01
+"""def gcd(n1,n2):
+    gcd=1 
+    i=1
+    while i<=n1 and i<=n2:
+        if n1%i==0 and n2%i==0:
+            gcd=i
+        i+=1
+    return gcd
+print(gcd(12,18))"""
+    
+#approch - 02
+
+"""def gcd(m,n):
+    while(m!=0):
+        t=m 
+        m=n%m       #m,n=n%m,m
+        n=t 
+    return n
+print(gcd(8,16))"""
 
 # 
 """def info(name,age):
@@ -371,7 +392,11 @@ profile(25,name="shivu",mob=12346789)
 """
 
 
+"""
+def var(**arg):
+    print(arg)
+    
+    
+var(name="shiva",mob=123456789,place="Mysore")
 
-
-
-
+"""
