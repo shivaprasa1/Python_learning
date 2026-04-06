@@ -1,6 +1,4 @@
 
-
-
 #1) def function decimal to binary 
 
 #using built-in 
@@ -59,8 +57,6 @@ format(89,'o')"""
 print(dec_oct(89))
    """ 
    
-
-
 
 
 
@@ -136,5 +132,70 @@ def dec_hex(dec):
     return hx 
 
 print(dec_hex(93))"""
+
+
+# 4) bin to dec 
+
+"""def bin_dec(bin):
+    while bin>0:
+        r=bin%10
+        dec=0
+        for i in range(len(str(bin))):
+            dec+=r*2^int(i)
+        bin//=10
+    return dec  
+print(bin_dec(1101))"""
+
+#or 
+
+"""def bin_dec(bin):
+    if bin==0:
+        return 0 
+    dec=0
+    pw=1
+    while bin>0:
+        r=bin%10
+        dec=dec+r*pw
+        pw=pw*2 
+        bin//=10
+    return dec"""
+
+
+
+#5)  oct to dec 
+
+"""def oct_dec(bin):
+    if bin==0:
+        return 0 
+    dec=0
+    pw=1
+    while bin>0:
+        r=bin%10
+        dec=dec+r*pw
+        pw=pw*8 
+        bin//=10
+    return dec"""
     
-    
+
+#6) hex to dec 
+"""
+hx='2AB' 
+st=""
+a=0
+for i in hx[::-1]:
+    if i==A:
+        st=10*16
+
+
+rev=hx[::-1]"""
+ 
+
+# ascii to char ----> ord 
+# char to ascii ----> chr
+
+
+"""
+int('0',10)#dec
+int('2ab',16) #hexa
+print(int('101',2)) #binery
+print(int('123456',8)) #octal"""
