@@ -87,11 +87,11 @@ print(ls[len(ls)-1::-1]) """
 
 
 #extend vs append vs + 
-a=[1,2,3]
+"""a=[1,2,3]
 b=[5,6,7]
 a.extend(b) # iterable each value and store
-a.append(b) # it store that obj as value 
-c=a+b # create new and combain
+a.append(b)""" # it store that obj as value 
+# c=a+b # create new and combain
 
 
 
@@ -120,13 +120,23 @@ print(lst)"""
 
 #Nested List
 
-ls=[1,2,[5,6,9],6]
-
+"""ls=[1,2,[5,6,9],6]
 print(ls[2][0])
+"""
+ls2=[[1,2,3],[4,5,6],[7,8,9]]
+for i in ls2:
+    for j in i:
+        print(j)
 
+"""
 for i in ls:
     if isinstance(i,list):
         for j in i:
             print(j)
     else:
         print(j)
+
+"""
+        
+
+print(chr(65),chr(97))
