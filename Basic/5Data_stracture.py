@@ -70,13 +70,13 @@ for i in range(len(lst)-1 , -1 , -1):
 
 
 #Slicing on list
-ls=[1,2,3,4,5,6,7,8]
+"""ls=[1,2,3,4,5,6,7,8]
 print(ls[::2])
 print(ls[1::2])
 print(ls[:])
 print(ls[::-1])
 print(ls[len(ls)-1:-1:-1]) # it gives empty becaouse -1 act as last negative index
-print(ls[len(ls)-1::-1]) 
+print(ls[len(ls)-1::-1]) """
 
 
 
@@ -115,3 +115,18 @@ print(lst)
 #del lst # delete obj
 lst.clear() # delete values
 print(lst)"""
+
+
+
+#Nested List
+
+ls=[1,2,[5,6,9],6]
+
+print(ls[2][0])
+
+for i in ls:
+    if isinstance(i,list):
+        for j in i:
+            print(j)
+    else:
+        print(j)
