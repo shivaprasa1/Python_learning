@@ -123,10 +123,10 @@ print(lst)"""
 """ls=[1,2,[5,6,9],6]
 print(ls[2][0])
 """
-ls2=[[1,2,3],[4,5,6],[7,8,9]]
-for i in ls2:
-    for j in i:
-        print(j)
+# ls2=[[1,2,3],[4,5,6],[7,8,9]]
+# for i in ls2:
+#     for j in i:
+#         print(j)
 
 """
 for i in ls:
@@ -139,4 +139,8 @@ for i in ls:
 """
         
 
-print(chr(65),chr(97))
+# print(chr(65),chr(97))
+
+
+
+            
