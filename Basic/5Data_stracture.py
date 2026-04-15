@@ -14,7 +14,8 @@
 #(iv)dict
 
 
-#1) List
+#1) List - it is an linear data structure, store multiple values to single variable , also multi datatype , orderd , mutable ,duplicates allowed..............
+
 
 #creating empty list
 """lst=[]
@@ -36,7 +37,7 @@ for i in range(len(lst)-1 , -1 , -1):
 
 
 #remove 
-#1) By remove - specify the value not index
+#1) By remove - specify th e value not index
 #2) By pop - not specify it remove last or if specify then it remove that index specify
 #3) By del - not specify it remove entire object or list only 
 #4) By clear - not specify it remove only values not object
@@ -248,7 +249,7 @@ s1.discard(2)
 s1.discard(1000000000)#not give any error
 
 """
-#pop
+"""#pop
 s1={5,6,9,2}
 
 print(s1.pop()) # randomly remove from the set and return ele
@@ -266,6 +267,27 @@ s1={5,6,9,2}
 s2=s1 #it change
 s3=s1.copy() # it create duplicate
 
+#addition and multipliction not allowed
+
+s1+s2 
+s1*s2
+
+
+#union
+
+s1.Union(s2) #combines and return new set
+u=s1|s2 # same but not return
+
+
+#intersection
+
+s1.intersection(s2)
+s1&s2
+
+#difference
+
+
+"""
 
 
 
