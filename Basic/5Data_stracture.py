@@ -170,27 +170,111 @@ for i in ls:
 #set not allow duplicate
 #set is not orderd
 #set inside set not allow mutable datatype but only allow immutable
+#set is mutable
+#not index based
+#set not support slicing
 
 """
 
 
+"""
 s1={} #----> dict
 s1={1,"shiva",3.1} #---->SET
 
-"""s2={{1:"shiva"},[1,2,3]} #----> not allowed mutable datatype inside set
+s2={{1:"shiva"},[1,2,3]} #----> not allowed mutable datatype inside set
 print(s2)
 """
 
-ages=set()
-type(ages)
-
 #adding to set
+
+#add 
+#update
+
+"""ages=set()
+type(ages)
 
 ages.add(34)
 ages.add(56)
 ages.add(29)
 ages.add(56) #duplicate not allowed
 print(ages)
+
+
+#remove duplicate from list
+ls=[3,4,5,3,4,7,4,6,5]
+
+#itrate 
+uls=set()
+for ele in ls:
+    uls.add(ele)
+print(uls) 
+
+#Type caste
+uele=set(ls)
+print(uele)
+
+
+"""
+
+
+#add vs update
+
+"""t1=(1,2,3,5)
+s1={5,6,9,2}
+
+ls=[100,222,666]
+s1.add(t1) # obj is store
+s1.update(t1) #each ele is store
+s1.update(ls)  # list cannot add but we can update
+print(s1)"""
+
+
+#delete
+
+#remove - specify ele
+#pop - random ele
+#dicard - specify and give error
+#clear  - remove all ele
+#del - remove obj
+
+
+
+#remove vs discard
+
+"""s1.remove(1)
+s1.remove(100000)#gives error
+
+s1.discard(2)
+s1.discard(1000000000)#not give any error
+
+"""
+#pop
+s1={5,6,9,2}
+
+print(s1.pop()) # randomly remove from the set and return ele
+print(s1)
+
+#clear vs del
+
+s1.clear()
+del s1
+
+
+#copy vs alias
+
+s1={5,6,9,2}
+s2=s1 #it change
+s3=s1.copy() # it create duplicate
+
+
+
+
+
+
+
+
+
+
 
 
 
