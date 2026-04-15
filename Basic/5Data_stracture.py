@@ -81,11 +81,6 @@ print(ls[len(ls)-1::-1]) """
 
 
 
-
-
-
-
-
 #extend vs append vs + 
 """a=[1,2,3]
 b=[5,6,7]
@@ -143,4 +138,62 @@ for i in ls:
 
 
 
-            
+
+
+
+#string
+
+
+
+
+
+
+
+
+
+
+
+#tuple
+
+
+
+
+
+#DICT
+
+
+
+
+#SET 
+
+"""
+#set not allow duplicate
+#set is not orderd
+#set inside set not allow mutable datatype but only allow immutable
+
+"""
+
+
+s1={} #----> dict
+s1={1,"shiva",3.1} #---->SET
+
+"""s2={{1:"shiva"},[1,2,3]} #----> not allowed mutable datatype inside set
+print(s2)
+"""
+
+ages=set()
+type(ages)
+
+#adding to set
+
+ages.add(34)
+ages.add(56)
+ages.add(29)
+ages.add(56) #duplicate not allowed
+print(ages)
+
+
+
+
+
+
