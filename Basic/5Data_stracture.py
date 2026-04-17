@@ -13,6 +13,7 @@
 #(iii)set
 #(iv)dict
 
+#-------------------------------------------------------------------------------------------------------
 
 #1) List - it is an linear data structure, store multiple values to single variable , also multi datatype , orderd , mutable ,duplicates allowed , flixable size , ..............
 
@@ -110,7 +111,13 @@ print(list)
 #Sort
 #1)sort - it is method that sort originel obj
 #2)sorted - it is function that create separet obj and then sort
-#3) reverse - 
+#3) reverse - it is methos that reverse the list
+
+
+"""ls=[1,2,3,4,5]
+print(ls.reverse()) #give None becouse not return 
+sorted(ls)
+print(ls)"""
 
 """ls=[1,2,3,4,5]
 print(ls.sort(key=None,reverse=True))
@@ -120,6 +127,9 @@ print(ls.copy())
 
 
 #searching or count
+#1)index
+#2)count
+
 """#1) index -  search the index and also where to start to find if having same element ---> ls.index(ele,start,end)
 ls=[1,2,3,4,5,6,5,6,5,66,66,66,66,88,99,5]
 print(ls.index(5,5,8))
@@ -196,7 +206,7 @@ for i in ls:
 #1)enumerate(list)
 #2)zip(list1,list2)
 
-
+"""
 list1=[1,2,3,4,5,6]
 list2=[7,8,9,10]
 
@@ -206,8 +216,10 @@ print(list(v))
 for i,x in v:
     print(x) 
 
-print(list(zip(list1,list2)))
+print(list(zip(list1,list2)))"""
 
+
+#------------------------------------------------------------------------------------------------------------------------
 
 
 #string
@@ -223,6 +235,41 @@ print(list(zip(list1,list2)))
 
 
 #tuple -  it is an linear data structure, store multiple values to single variable , also multi datatype , orderd , immutable ,duplicates allowed , fixed size ,  ..............
+
+#tuple method
+
+#searching and count
+#1)index
+#2)count
+
+t=(5)#----->int type
+print(type(t))
+t=(5,)#---->tuple type
+print(type(t))
+t=tuple()#----> tuple constructer
+print(type(t))
+
+#methods
+t=(1,2,3,4,5,6,100)
+tt=(5,8,9,2,5)
+print(t.count(5))
+print(t.index(6))
+
+#zip
+z=dict(zip(t,tt))
+print(set(zip(t,tt)))
+print(tuple(zip(t,tt)))
+print(z)
+
+#pack and unpack
+p=1,2,3
+a,b,c=p
+print(a,b,c)
+
+#enumerate
+for i,v in enumerate(tt):
+    print(f'{i}---->{v}')
+
 
 
 
@@ -379,21 +426,25 @@ s1^s2
 
 """
 
-a={1,2,3,4}
+"""a={1,2,3,4}
 b={1,2,3,4}
 c={4,3,2,1}
 
 print(a==b,a>=b,a<=c)
-
+"""
 
 #checking
 
 #superset  
-
 #subset
 #disjoint
 
 
+
+#frozen_set
+"""s={1,2,3,4,5}
+v=frozenset(s)
+print(type(v))"""
 
 
 
