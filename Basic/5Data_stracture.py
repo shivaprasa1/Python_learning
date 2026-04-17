@@ -513,3 +513,16 @@ print(fmat)"""
 
 lt=[(i,j) for i in range(3) for j in range(3)]
 print(lt)
+
+
+#add two list 
+a=[2,3,4,100]
+b=[1,2,3]
+
+"""lt=[a[i]+b[i] for i in range(len(a))]
+print(lt)"""
+
+
+z=[x+y for x,y in zip(a,b)]
+print(z)
+print(list(zip(a,b)))
