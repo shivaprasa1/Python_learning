@@ -237,63 +237,54 @@ print(list(zip(list1,list2)))"""
 #tuple -  it is an linear data structure, store multiple values to single variable , also multi datatype , orderd , immutable ,duplicates allowed , fixed size ,  ..............
 
 #tuple method
-
 #searching and count
 #1)index
 #2)count
 
-t=(5)#----->int type
+"""t=(5)#----->int type
 print(type(t))
 t=(5,)#---->tuple type
 print(type(t))
 t=tuple()#----> tuple constructer
 print(type(t))
-
+"""
 #methods
-t=(1,2,3,4,5,6,100)
+"""t=(1,2,3,4,5,6,100)
 tt=(5,8,9,2,5)
 print(t.count(5))
-print(t.index(6))
+print(t.index(6))"""
 
 #zip
-z=dict(zip(t,tt))
+"""z=dict(zip(t,tt))
 print(set(zip(t,tt)))
 print(tuple(zip(t,tt)))
-print(z)
+print(z)"""
 
 #pack and unpack
-p=1,2,3
+"""p=1,2,3
 a,b,c=p
-print(a,b,c)
+print(a,b,c)"""
 
 #enumerate
-for i,v in enumerate(tt):
+"""for i,v in enumerate(tt):
     print(f'{i}---->{v}')
+"""
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#----------------------------------------------------------------------------------------------------------------------------
 #DICT
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -320,7 +311,6 @@ print(s2)
 """
 
 #adding to set
-
 #add 
 #update
 
@@ -363,13 +353,12 @@ s1.update(ls)  # list cannot add but we can update
 print(s1)"""
 
 
-#delete
-
-#remove - specify ele
-#pop - random ele
-#dicard - specify and give error
-#clear  - remove all ele
-#del - remove obj
+#remove
+#1)remove - specify ele and give error if not present
+#2)pop - random ele
+#3)dicard - specify and no error
+#4)clear  - remove all ele
+#5)del - remove obj
 
 
 
@@ -433,11 +422,35 @@ c={4,3,2,1}
 print(a==b,a>=b,a<=c)
 """
 
-#checking
 
-#superset  
-#subset
-#disjoint
+#operations
+#1)union
+#2)intersection
+#3)difference
+#4)symmetric_difference
+"""
+a={1,2,3,4,5,6,7,8,9,10}
+b={8,9,10}
+c={5,6,9,100}
+d={9}
+
+print(c.union(a))
+print(a.intersection(c))
+print(a.difference(c))
+print(a.symmetric_difference(c))
+"""
+#update
+#1)intersection_update
+#2)difference_update
+#symmetric_difference_update
+
+"""c.intersection_update(a)
+print(c)"""
+
+#checking
+#issuperset  
+#issubset
+#isdisjoint
 
 
 
@@ -448,12 +461,55 @@ print(type(v))"""
 
 
 
+#Comprenstion - it is used to write in single line of code of list,set and dict......
+
+"""
+ls=[4,5,7,8,9,3,2]
+# wls=[]
+# for ele in ls:
+#     wls.append('even' if ele%2==0 else 'odd')
+    
+wls=["even" if ele%2==0 else 'odd' for ele in ls]
+print(wls)"""
 
 
+#count even and odd
+
+"""ecount,ocount=len([i for i in ls if i%2==0]),len([i for i in ls if i%2==1])
+print(ecount,ocount)
+
+e,o=sum(i%2==0 for i in ls),sum(i%2==1 for i in ls)"""
 
 
+#dict freq
+"""df={
+    "even":sum(i%2==0 for i in ls),
+    "odd":sum(i%2==1 for i in ls)
+}
+print(df)
+"""
+#freq of each ele
 
+"""ls=[2,3,4,5,6,5,4,3,1,9,8,4,7]
 
+frq={i:ls.count(i) for i in ls }
+print(frq)"""
 
+#freq of each char
 
+"""st= 'AmmA'
+st=st.lower()
+freqch={ch:st.count(ch) for ch in st.lower()}
+print(freqch)
+"""
 
+#flatten
+
+"""mat=[[1,2,3],[4,5,6],[7,8,9]]
+fmat=[ele for row in mat for ele in row]
+print(fmat)"""
+
+#idx of 3*3 matrix
+
+lt=[(i,j) for i in range(3) for j in range(3)]
+print(lt)
