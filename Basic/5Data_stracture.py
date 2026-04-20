@@ -281,27 +281,51 @@ print(a,b,c)"""
 #2) dict[key]
 
 
-d = {'name': 'Shiva', 'age': 22}
+"""d = {'name': 'Shiva', 'age': 22}
 
 # print(d['age'])
 # print(d.get('age'))
-# print(d.get("sal"))
-
+# print(d.get("sal")==None)
+"""
 
 
 #adding/update
 #1)update(dict)- add or update multiple key-value pairs
 #2)setdefault(key,default)- get value if not exists add key
 
+"""d = {'name': 'Shiva'}
+# v={'city':'Benglore','salary':50000}
+# d["work"]="Software Engineer"
+# d.update(v)
+# print(d)
+
+d.setdefault("name","shivaprasad") #get key but if update key-value
+print(d)
+
+"""
+
 #remove
 #1)pop(key)
 #2)popitem()-remove last
 #3)clear()
 
+d = {'name': 'Shiva','city':'Benglore'}
+"""# print(d.pop("name"))
+print(d.popitem())
+print(d)
+print(d)
+d.clear()
+print(d)"""
+
+
 #view
 #1)keys()
 #2)values()
 #items()
+
+v=d.keys()
+print(v)
+
 
 #copying
 #copy
