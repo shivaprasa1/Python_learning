@@ -559,7 +559,7 @@ print(list(zip(a,b)))"""
 
 
 
-
+#################################
 #
 # n=int(input("enter a value: "))
 # # ls=[ i for i in range(n+1)]
@@ -575,17 +575,42 @@ print(list(zip(a,b)))"""
 
 #using list comprenhenstion last char of each string
 
-# a=["shivaprasad","hello"]
-# count=0
-# for i in a:
-#     for j in i:
-#         count+=1   
-# print(count)
+"""a=["shivaprasad","hello"]
+count=0
+for i in a:
+    for j in i:
+        count+=1   
+print(count)
 
-# # l=[ i[-1] for i in a]
-# # print(l) 
+l=[ i[-1] for i in a]
+print(l) """
+
 # using list comprenhenstion count char of list
 
-a=["shivaprasad","hello"]
+"""a=["shivaprasad","hello"]
 lst=len([j for i in a  for j in i])
 print(lst)
+"""
+
+#kb to bytes
+
+# lst=[5,10,50]
+
+"""for i in lst:
+    print(i*1024)
+"""
+"""lst=[5,10,50]
+l=[f'{i*1024}byte' for i in lst]
+
+
+ls=[f'{x//1024}kb'  for x in lst]
+print(ls)"""
+
+
+#remove currency
+"""c=["$10","$100","$500" , "1000"]
+ls=[ i[1::] if '$' in i else i for i in c  ]
+print(ls)"""
+
+
+#------------------------
