@@ -276,9 +276,38 @@ print(a,b,c)"""
 #----------------------------------------------------------------------------------------------------------------------------
 #DICT
 
+#accessing ele
+#1) get(key)
+#2) dict[key]
+
+
+d = {'name': 'Shiva', 'age': 22}
+
+# print(d['age'])
+# print(d.get('age'))
+# print(d.get("sal"))
 
 
 
+#adding/update
+#1)update(dict)- add or update multiple key-value pairs
+#2)setdefault(key,default)- get value if not exists add key
+
+#remove
+#1)pop(key)
+#2)popitem()-remove last
+#3)clear()
+
+#view
+#1)keys()
+#2)values()
+#items()
+
+#copying
+#copy
+
+#create dict
+#fromkeys(key,value)
 
 
 
@@ -511,18 +540,52 @@ print(fmat)"""
 
 #idx of 3*3 matrix
 
-lt=[(i,j) for i in range(3) for j in range(3)]
-print(lt)
-
-
-#add two list 
-a=[2,3,4,100]
-b=[1,2,3]
-
-"""lt=[a[i]+b[i] for i in range(len(a))]
+"""lt=[(i,j) for i in range(3) for j in range(3)]
 print(lt)"""
 
 
+#add two list 
+"""a=[2,3,4,100]
+b=[1,2,3]"""
+
+"""lt=[a[i]+b[i] for i in range(len(a))]
+print(lt)"""
+"""
+
 z=[x+y for x,y in zip(a,b)]
 print(z)
-print(list(zip(a,b)))
+print(list(zip(a,b)))"""
+
+
+
+
+
+#
+# n=int(input("enter a value: "))
+# # ls=[ i for i in range(n+1)]
+# # print(ls)
+
+# #
+
+
+
+#list comprehension to append in list
+# ls=[int(input()) for i in range(int(input()))]    # inside the range will accept first then first input is accept 
+# print(ls)
+
+#using list comprenhenstion last char of each string
+
+# a=["shivaprasad","hello"]
+# count=0
+# for i in a:
+#     for j in i:
+#         count+=1   
+# print(count)
+
+# # l=[ i[-1] for i in a]
+# # print(l) 
+# using list comprenhenstion count char of list
+
+a=["shivaprasad","hello"]
+lst=len([j for i in a  for j in i])
+print(lst)
