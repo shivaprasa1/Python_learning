@@ -323,8 +323,10 @@ print(d)"""
 #2)values()
 #items()
 
-v=d.keys()
-print(v)
+"""print(list(d.keys()))
+print(list(d.values()))
+print(list(d.items()))
+"""
 
 
 #copying
@@ -332,8 +334,10 @@ print(v)
 
 #create dict
 #fromkeys(key,value)
-
-
+"""d = {'name': 'Shiva','city':'Benglore'}
+print(d.fromkeys('ABC',123))
+print(d)
+"""
 
 
 
@@ -638,3 +642,34 @@ print(ls)"""
 
 
 #------------------------
+
+#Flatten list
+"""# ls=[[1,2,3],[4,5,6],[7,8,9]]
+
+
+# lst=[ j**2 for i in ls for j in i if j%2==0]
+# print(lst)
+"""
+
+#hypothesis 
+"""for i in range(1,21):
+    for j in range(1,21):
+        for k in range(1,21):
+            if i**2+j**2==k**2:
+                print(i,j,k)
+"""
+
+"""lst=[ (a, b,c)  for a in range(1,21) for b in range(1,21) for c in range(1,21) if a**2+b**2==c**2 ]
+print(lst)"""
+
+#self divide num ( 128 -> 1 , 2 , 8 all divids 128 )
+is_d=True 
+is_a=[]
+for i in range(1,201):
+    for j in str(i):
+        d=int(j)
+        if d==0 or i%d!=0 :
+            is_d=False  
+        if is_d:
+            is_a.append(j)
+print(is_a)

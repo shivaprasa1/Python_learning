@@ -38,7 +38,8 @@ greet() ---------> calling statements
 1)positional
 2)keyword
 3)default
-4)variable length arg
+4)variable length arg - i) variable length positional arg 
+                        ii) variable length keyword arg
 """
 
 #example
@@ -400,3 +401,39 @@ def var(**arg):
 var(name="shiva",mob=123456789,place="Mysore")
 
 """
+
+
+# 4)variable length arg - i) variable length positional arg 
+#                         ii) variable length keyword arg
+#i) variable length positional arg
+"""def fun(*t):
+    print(t)
+print(fun(1,2,3,5,5,1,5,585))
+"""
+
+#ii) variable length keyword arg
+
+"""def fun(**kw):
+    for k,w in kw.items():
+        print(k,w)
+
+print(fun(radius=10,length=100,breadth=500))"""
+
+
+"""
+def print_it(i,j,*arg,x,y,**kw):
+    print(i,j)
+    print(arg)
+    print(x,y)
+    print(kw)
+
+print(print_it(1,2,5,6,4,8,9,6,2,x=100,y=200,a=500,b=600))  # after positional we cant write anything if want then we must write keyword arg
+
+#order - (positional , variable length argu,keyword argu , variable length keyword argu)"""
+
+
+#unpack lst , tuple,set
+def fun(a,b,c):
+    print(a,b,c)
+ls=[1,2,3]
+print(fun(*ls))
