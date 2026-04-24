@@ -432,8 +432,107 @@ print(print_it(1,2,5,6,4,8,9,6,2,x=100,y=200,a=500,b=600))  # after positional w
 #order - (positional , variable length argu,keyword argu , variable length keyword argu)"""
 
 
-#unpack lst , tuple,set
+"""#unpack lst , tuple,set
 def fun(a,b,c):
     print(a,b,c)
 ls=[1,2,3]
-print(fun(*ls))
+print(fun(*ls))"""
+"""
+def disp(name='shivu',marks=100):
+    print('name :',name)
+    print('marks :',marks)
+
+dict={'namee':'shivoooo','marks':200}
+print(disp(*dict)) # only take key from dict if we used positional variable legnth argu
+print(disp(**dict)) # error if give dict key name is diffrent from parameter """
+
+
+
+
+#23/04/26
+#----------------------------------------------
+
+#recursion: function calling itself 
+#a) base condition to stop call itself
+#b) calling statement to call itself
+
+
+#
+"""def m1():
+    print('i am m1')
+    m2()
+                                # cycling calling
+def m2():
+    print('iam m2')
+    m1()
+    
+
+#---
+
+def demo():
+    print('i am demo')
+    demo()   # calling statement to call itself  and must have base condtion if not it will go infinite time
+    """
+    
+    
+    
+#1) head recursion  - recursion in fast
+"""def headprint(n):
+    if n==0:
+        return
+    headprint(n-1)   #after calling all it again print from back 
+    print(n)
+
+headprint(5)"""
+
+
+#2) tail recursion - recursion in last
+"""
+def tailprint(n):
+    print(n)
+    if n>1:
+        tailprint(n-1)
+tailprint(3) """
+
+
+#default limit in recursion - 10^4 or 10^3
+
+#we can set limit function ---> sys module
+
+#----------------------------------
+
+#example 
+
+#factorial 
+#5!=5*4*3*2*1
+#1!=1
+#0!=1
+
+# 5!=5*4!
+# n!=n*(n-1)!
+
+"""def fact(n):
+    if n<=1:
+        return 1
+    return n*fact(n-1)
+
+print(fact(5))"""
+
+#sum of n naturel
+"""def sumofn(n):
+    if n==0:
+        return 0
+    return n+sumofn(n-1)
+print(sumofn(5))"""
+
+
+#sum of digit
+"""def sumofd(n):
+    if n==0:
+        return 0
+    return n%10+sumofd(n//10)
+print(sumofd(12345))"""
+
+
+
+#
