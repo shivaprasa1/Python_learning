@@ -16,6 +16,7 @@ That combination gives you the maximum career leverage with the least friction.
 
 ---
 
+
 ### The Career Path — Step by Step
 
 Think of your career as a structured path. Not random tutorials. Not jumping between frameworks. A clear, connected path.
