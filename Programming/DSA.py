@@ -139,7 +139,7 @@ print(dec_hex(93))"""
 
 # 4) bin to dec 
 
-"""def bin_dec(bin):
+def bin_dec(bin):
     while bin>0:
         r=bin%10
         dec=0
@@ -147,7 +147,7 @@ print(dec_hex(93))"""
             dec+=r*2^int(i)
         bin//=10
     return dec  
-print(bin_dec(1101))"""
+print(bin_dec(1101))
 
 #or 
 

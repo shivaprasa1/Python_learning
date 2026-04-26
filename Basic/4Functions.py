@@ -503,7 +503,7 @@ tailprint(3) """
 
 #example 
 
-#factorial 
+# 1) factorial 
 #5!=5*4*3*2*1
 #1!=1
 #0!=1
@@ -518,7 +518,7 @@ tailprint(3) """
 
 print(fact(5))"""
 
-#sum of n naturel
+# 2) sum of n naturel
 """def sumofn(n):
     if n==0:
         return 0
@@ -526,7 +526,7 @@ print(fact(5))"""
 print(sumofn(5))"""
 
 
-#sum of digit
+#3) sum of digit
 """def sumofd(n):
     if n==0:
         return 0
@@ -535,4 +535,42 @@ print(sumofd(12345))"""
 
 
 
-#
+#4) count digit in number
+"""def countd(n):
+    if n>=-9 and n<=9:
+        return 1
+    return 1+countd(n//10)
+
+print(countd(-568))
+
+print(-569 > -9)"""
+
+#5) decemil to bin
+
+"""def dec_bin(n):
+    if n==0:
+        return '0'
+    return dec_bin(n//2)+str(n%2)
+print(dec_bin(4))"""
+
+#6) search specified element present the number or not
+
+"""ls=[]
+def search(ls,ele,idx=0):
+    if idx==len(ls):
+        return None
+    if ls[idx]==ele:
+        return idx
+    return search(ls,ele,idx+1)
+
+print(search(ls,9))"""
+
+#sum of num in list
+
+def sum(ls,idx=0):
+    if idx==len(ls):
+        return 0
+    return ls[idx]+sum(ls,idx+1)
+
+
+    
