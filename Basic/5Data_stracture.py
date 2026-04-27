@@ -663,7 +663,7 @@ print(ls)"""
 print(lst)"""
 
 #self divide num ( 128 -> 1 , 2 , 8 all divids 128 )
-is_d=True 
+"""is_d=True 
 is_a=[]
 for i in range(1,201):
     for j in str(i):
@@ -672,4 +672,4 @@ for i in range(1,201):
             is_d=False  
         if is_d:
             is_a.append(j)
-print(is_a)
+print(is_a)"""

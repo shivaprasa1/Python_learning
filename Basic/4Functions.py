@@ -567,10 +567,9 @@ print(search(ls,9))"""
 
 #sum of num in list
 
-def sum(ls,idx=0):
+"""def sum(ls,idx=0):
     if idx==len(ls):
         return 0
-    return ls[idx]+sum(ls,idx+1)
+    return ls[idx]+sum(ls,idx+1)"""
 
 
-    

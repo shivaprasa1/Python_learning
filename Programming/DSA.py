@@ -147,7 +147,7 @@ def bin_dec(bin):
             dec+=r*2^int(i)
         bin//=10
     return dec  
-print(bin_dec(1101))
+print(bin_dec(101))
 
 #or 
 
@@ -202,3 +202,6 @@ int('0',10)#dec
 int('2ab',16) #hexa
 print(int('101',2)) #binery
 print(int('123456',8)) #octal"""
+
+
+print(int('101',2))
