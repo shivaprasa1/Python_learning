@@ -573,3 +573,64 @@ print(search(ls,9))"""
     return ls[idx]+sum(ls,idx+1)"""
 
 
+
+
+
+#------------
+
+
+
+#fibonnacii- nth 
+"""def fib(n):
+    if n==1:
+        return 0
+    if n==2:
+        return 1
+    return fib(n-1)+fib(n-2)
+"""
+
+
+
+#REV
+"""ls=[1,2,3,4,5,6]
+def rev(ls,start=0,end=len(ls)-1):
+    if start>=end:
+        return ls  
+    ls[start],ls[end]=ls[end],ls[start]
+    return rev(ls,start+1,end-1)
+
+print(rev(ls))"""
+
+
+# A0 to A1
+"""def gen(l,n):
+    for i in range(n):
+        B=l-(l//3)
+        print(f'A{i} L:{l} B:{b}')
+        l=B
+        b=l"""
+
+#A0 TO A7
+
+"""def paper_size(n,l,w):
+    if n==8:
+        return 
+    print(f'A {n}  Length:{l} , Width:{w}')
+    paper_size(n+1,w,l//2)
+
+paper_size(0,1189,841)
+
+   """     
+
+#GCD
+
+"""def gcd(m,n):
+    if n==0:
+        return m 
+    return gcd(n,m%n)  
+print(gcd(48,18))
+"""
+
+#lcm 
+
+
