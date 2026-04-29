@@ -5,7 +5,7 @@
 
 Here is something most tutorials will not tell you upfront.
 
-Right now, in the technical job market, there is a clear and growing demand — not just for backend developers, not just for React developers — but for **full stack developers**. Companies do not want someone who can only build APIs or someone who can only build UIs. They want one developer who can do both.
+Right now, in the technical job market, there is a clear and growing demand — not just for backend developers, not just for React developers — but for **full stack developers**. Companies do not want someone who can only build APIs or someone who can only build UIs. They want one developer who can do both .
 
 And the question is: **what is the easiest, most practical way to become a full stack developer today?**
 
