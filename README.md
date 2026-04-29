@@ -1,3 +1,4 @@
+
 ## The Full Stack Developer Roadmap (Why You Need Python)
 
 ### The Market Reality
